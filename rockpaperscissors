@@ -1,1 +1,19 @@
+import random
+options = ["rock","paper","scissors"]
+print("rock, paper, or scissors?")
+while True:
+    PlayerChoice = input()
+    ComputerChoice = options[random.randint(0, 2)]
+    if ComputerChoice == "rock" and PlayerChoice == "paper":
+        print("Well Done!!")
+    elif ComputerChoice == "paper" and PlayerChoice == "scissors":
+        print("Well Done!!")
+    elif ComputerChoice == "scissors" and PlayerChoice == "rock":
+        print("Well Done!!")
+    elif PlayerChoice == ComputerChoice:
+        print("Draw!")
+    elif PlayerChoice != "rock" or "paper" or "scissors":
+        print("Not a valid option!!")
+    else: 
+        print("Unlucky, you lost")
 
